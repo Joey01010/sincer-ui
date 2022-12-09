@@ -71,8 +71,8 @@ export default {
             fullscreen: false,
             name: 'linxin',
             message: 2,
-            name: 'dashboard',
-            photo: require('../../assets/img/img2.jpg')
+            name: '信征员工',
+            photo: require('../../assets/img/img6.jpg')
         };
     },
     computed: {

@@ -108,7 +108,7 @@ export default {
                 address: 'equip_no',
                 name: '',
                 pageIndex: 0,
-                pageSize: 50
+                pageSize: 20
             },
             tableData: [],
             multipleSelection: [],

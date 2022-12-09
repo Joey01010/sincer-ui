@@ -21,6 +21,21 @@ export default new Router({
                     meta: { title: '系统首页' }
                 },
                 {
+                    path: '/dashboard',
+                    component: () => import(/* webpackChunkName: "dashboard" */ '../components/page/Dashboard.vue'),
+                    meta: { title: '系统首页' }
+                },
+                {
+                    path: '/pd-info',
+                    component: () => import(/* webpackChunkName: "dashboard" */ '../components/page/product_list.vue'),
+                    meta: { title: '产品信息' }
+                },
+                {
+                    path: '/pd-record',
+                    component: () => import(/* webpackChunkName: "dashboard" */ '../components/page/product_record.vue'),
+                    meta: { title: '日报记录' }
+                },
+                {
                     path: '/shanggangjilu',
                     component: () => import(/* webpackChunkName: "dashboard" */ '../components/page/shanggangjilu.vue'),
                     meta: { title: '上岗记录' }

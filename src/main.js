@@ -19,6 +19,8 @@ import './assets/css/theme-green/index.css'; // 浅绿色主题
 import './assets/css/icon.css';
 import './components/common/directives';
 import 'babel-polyfill';
+//移动端自适应
+//import "amfe-flexible/index.js";
 
 
 Vue.config.productionTip = false;

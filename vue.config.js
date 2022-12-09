@@ -14,12 +14,24 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-                target: 'http://localhost:8000',
+                target: 'http://localhost:8081',
                 changeOrigin: true,
                 pathRewrite: {
-                    '/api': ''
+                    '^/api': ''
                 }
             }
+        },
+        //跳过host检查
+        //disableHostCheck: true
+    },
+    //网页标签图标
+    pwa: {
+        iconPaths: {
+            favicon32: 'favicon.ico',
+            favicon16: 'favicon.ico',
+            appleTouchIcon: 'favicon.ico',
+            maskIcon: 'favicon.ico',
+            msTileImage: 'favicon.ico',
         }
-    }
+    },
 }

@@ -3,17 +3,19 @@
   "version": "8.17.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build",
-    "start": "node index.js",
-    "server": "nodemon index.js --ignore client"
+    "serve": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve --open",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && node index.js",
+    "server": "SET NODE_OPTIONS=--openssl-legacy-provider && nodemon index.js --ignore client"
   },
   "dependencies": {
+    "amfe-flexible": "^2.2.1",
     "axios": "^0.18.1",
     "babel-polyfill": "^6.26.0",
     "element-ui": "^2.11.0",
     "file-saver": "^2.0.2",
     "mavon-editor": "^2.6.17",
+    "normalize.css": "^8.0.1",
     "vue": "^2.6.10",
     "vue-cropperjs": "^3.0.0",
     "vue-i18n": "^8.10.0",
@@ -24,8 +26,10 @@
     "xlsx": "^0.16.8"
   },
   "devDependencies": {
+    "@ttou/postcss-px-to-viewport": "^2.0.1",
     "@vue/cli-plugin-babel": "^3.9.0",
     "@vue/cli-service": "^3.9.0",
+    "postcss-pxtorem": "^5.0.0",
     "vue-template-compiler": "^2.6.10"
   }
 }
